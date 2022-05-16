@@ -25,7 +25,24 @@
       <!-- Offcanvas Menu Start -->
       <div class="offcanvas-menu-overlay"></div>
       <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas-close-switch">+</div>
         <div class="offcanvas__option">
+          <div class="offcanvas__nav__icons">
+            <a href="#" class="offcanvas-search"
+              ><i class="fas fa-search fa-2x"></i
+            ></a>
+            <!-- search model -->
+            <div class="search-model">
+              <div class="h-100 d-flex align-items-center justify-content-center">
+                  <div class="offcanvas-search-close-switch">+</div>
+                  <form class="search-model-form">
+                      <input type="text" id="search-input" placeholder="Search here.....">
+                  </form>
+              </div>
+          </div>
+            <a href="#"><i class="fas fa-heart fa-2x"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+          </div>
           <div class="offcanvas__links">
             <a href="#">Login</a>
             <a href="#">My account</a>
@@ -57,219 +74,901 @@
           </p>
         </div>
       </div>
-    </div>
-    <!-- Offcanvas Menu End -->
-    <!-- Navigation Section -->
-    <header class="header">
-      <div class="top_section">
-        <p class="text-center py-1">
-          Kanchan Cashmere : Free shipping, 30-day return or refund guarantee.
-        </p>
-      </div>
-      <div class="header__top">
-        <div class="container-fluid">
+
+      <!-- Offcanvas Menu End -->
+      <!-- Navigation Section -->
+      <header class="header">
+        <div class="top_section">
+          <p class="text-center py-1">
+            Kanchan Cashmere : Free shipping, 30-day return or refund guarantee.
+          </p>
+        </div>
+        <div class="header__top">
+          <div class="container-fluid header_second">
+            <div class="row">
+              <div class="col-lg-4 col-md-3">
+                <div class="header__top__left">
+                  <span class="currency">Currency:</span>
+                  <div class="header__top__hover">
+                    <span>$USD </span>
+                    <ul>
+                      <li>EUR</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-9">
+                <div class="header__top__right">
+                  <div class="header__top__links">
+                    <a href="#">Order Tracker</a>
+                    <a href="#">Login In</a>
+                    <a href="#">My Account</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid navbar_top">
           <div class="row">
-            <div class="col-lg-4 col-md-3">
-              <div class="header__top__left">
-                <span class="currency">Currency:</span>
-                <div class="header__top__hover">
-                  <span>$USD </span>
-                  <ul>
-                    <li>EUR</li>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-10">
+              <div class="header__logo">
+                <a href="./index.html"
+                  ><img
+                    src="./images/logo/86f925bb-31d2-4b9d-a678-f14c6ce78331.jpg"
+                    class="w-100"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-8 header_nav">
+              <nav class="nav__primary">
+                <div class="nav__primary__links">
+                  <ul id="menuElem">
+                    <li>
+                      <a href="#">Cashmere</a>
+                    </li>
+                    <li class="has-children">
+                      <a href="#">Women</a>
+                      <div class="pane">
+                        <ul class="women-pane-container container-fluid">
+                          <li class="has-children pane-column">
+                            <a href="#" class="pane-heading">Ready To Wear</a>
+                            <ul>
+                              <li>
+                                <a href="#" class="pane-link">Dress</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Top </a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Bottom</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Pullover</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Hodiee</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="has-children pane-column">
+                            <a href="#" class="pane-heading">Accessories</a>
+                            <ul>
+                              <li>
+                                <a href="#" class="pane-link">Sunglasses</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Hats</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Belt</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Caps</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="has-children pane-column">
+                            <a href="#" class="pane-heading">Shoe</a>
+                            <ul>
+                              <li>
+                                <a href="#" class="pane-link">Goldstar</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Nike</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Addidas</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Converse</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="has-children pane-column">
+                            <a href="#" class="pane-heading">Our Choice</a>
+                            <ul>
+                              <li>
+                                <a href="#" class="pane-link">Browse new</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Sales</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Heavy Discount</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link"
+                                  >Stock Clearence</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="pane-image">
+                            <div class="image-container">
+                              <img
+                                src="./images/women-collection/women3.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="image-container">
+                              <img
+                                src="./images/women-collection/women1.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="has-children">
+                      <a href="#">Men</a>
+                      <div class="pane">
+                        <ul class="women-pane-container container-fluid">
+                          <li class="has-children pane-column">
+                            <a href="#" class="pane-heading">Ready To Wear</a>
+                            <ul>
+                              <li>
+                                <a href="#" class="pane-link">Dress</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Top </a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Bottom</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Pullover</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Hodiee</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="has-children pane-column">
+                            <a href="#" class="pane-heading">Accessories</a>
+                            <ul>
+                              <li>
+                                <a href="#" class="pane-link">Sunglasses</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Hats</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Belt</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Caps</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="has-children pane-column">
+                            <a href="#" class="pane-heading">Shoe</a>
+                            <ul>
+                              <li>
+                                <a href="#" class="pane-link">Goldstar</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Nike</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Addidas</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Converse</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="has-children pane-column">
+                            <a href="#" class="pane-heading">Our Choice</a>
+                            <ul>
+                              <li>
+                                <a href="#" class="pane-link">Browse new</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Sales</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Heavy Discount</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link"
+                                  >Stock Clearence</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="pane-image">
+                            <div class="image-container">
+                              <img
+                                src="./images/men-collection/men3.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="image-container">
+                              <img
+                                src="./images/men-collection/men4.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="has-children">
+                      <a href="#">Accessories</a>
+                      <div class="pane">
+                        <ul class="women-pane-container container-fluid">
+                          <li class="has-children pane-column">
+                            <a href="#" class="pane-heading">Hats</a>
+                            <ul>
+                              <li>
+                                <a href="#" class="pane-link">Summer Wear</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Winter Wear </a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Autumn Wear</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">StrawHat</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Large Hats</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="has-children pane-column">
+                            <a href="#" class="pane-heading">Sunglasses</a>
+                            <ul>
+                              <li>
+                                <a href="#" class="pane-link">Gucci</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Raybon</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Oakley</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Persol</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="has-children pane-column">
+                            <a href="#" class="pane-heading">Shoe</a>
+                            <ul>
+                              <li>
+                                <a href="#" class="pane-link">Goldstar</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Nike</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Addidas</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Converse</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="has-children pane-column">
+                            <a href="#" class="pane-heading">Our Choice</a>
+                            <ul>
+                              <li>
+                                <a href="#" class="pane-link">Browse new</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Sales</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link">Heavy Discount</a>
+                              </li>
+                              <li>
+                                <a href="#" class="pane-link"
+                                  >Stock Clearence</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="pane-image">
+                            <div class="image-container">
+                              <img
+                                src="./images/accessories-collection/accessories1.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="image-container">
+                              <img
+                                src="./images/accessories-collection/accessories2.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="has-children">
+                      <a href="#">Home</a>
+                    </li>
+                    <li class="has-children">
+                      <a href="#">Our world</a>
+                      <div class="pane">
+                        <div class="container-fluid">
+                          <div class="pane-content">
+                            <div class="row our-world-container">
+                              <div class="col-lg-3">
+                                <div class="our-world-content">
+                                  <a href="#" class="pane-heading" style="padding-bottom: 20px;"
+                                    >Our Excellence</a
+                                  >
+                                  <ul>
+                                    <li>
+                                      <a href="#" class="pane-link"
+                                        >Browse new</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a href="#" class="pane-link">Sales</a>
+                                    </li>
+                                    <li>
+                                      <a href="#" class="pane-link"
+                                        >Heavy Discount</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a href="#" class="pane-link"
+                                        >Stock Clearence</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                <a href="#" class="pane-heading">Cashmere-The Origin</a>
+                                <div class="our-world-image">
+                                 
+                                  <img
+                                    src="./images/signature-collection/signature3.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
-              </div>
+              </nav>
             </div>
-            <div class="col-lg-8 col-md-9">
-              <div class="header__top__right">
-                <div class="header__top__links">
-                  <a href="#">Order Tracker</a>
-                  <a href="#">Login In</a>
-                  <a href="#">My Account</a>
+            <div class="col-lg-2 col-md-2 px-4 nav-icons">
+              <a href="#" class="search-switch"
+                ><i class="fas fa-search fa-2x"></i
+              ></a>
+              <!-- Search Model -->
+              <div class="search-model">
+                <div class="h-100 d-flex align-items-center justify-content-center">
+                    <div class="search-close-switch">+</div>
+                    <form class="search-model-form">
+                        <input type="text" id="search-input" placeholder="Search here.....">
+                    </form>
+                </div>
+            </div>
+              <a href="#"><i class="fas fa-heart fa-2x"></i></a>
+              <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+      </header>
+      <!-- Header section End -->
+      <!-- Hero Section Started -->
+      <section class="hero">
+        <div class="hero-menu set-bg" data-setbg="./images/hero/hero1.png">
+          <div class="content">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-5 col-lg-7 col-md-8 hero-container">
+                  <div class="hero__text">
+                    <h6>Summer Collection</h6>
+                    <h2>Fall - Winter Collections 2022</h2>
+                    <p>
+                      A specialist label creating luxury essentials. Ethically
+                      crafted with an unwavering commitment to exceptional
+                      quality.
+                    </p>
+                    <a href="#" class="primary-btn"
+                      >Shop now <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-2 col-md-6 col-sm-6 col-10">
-            <div class="header__logo">
-              <a href="./index.html"
-                ><img
-                  src="./images/logo/86f925bb-31d2-4b9d-a678-f14c6ce78331.jpg"
-                  class="w-100"
-                  alt=""
-              /></a>
+      </section>
+      <!-- Hero Section End -->
+      <!-- Product Section Started -->
+      <section class="product spad my-2">
+        <div class="container">
+          <h2 class="section-heading text-center py-3">Luxury Cashmere</h2>
+
+          <div
+            class="row"
+            style="margin-top: 20px; display: flex; justify-content: center"
+          >
+            <div class="col-lg-6 col-md-6 col-sm-12 px-2">
+              <div class="men-cart py-2">
+                <div class="images">
+                  <img src="./images/men-collection/men3.jpg" class="w-100 h-100" alt="" />
+                </div>
+                <div class="content">
+                  <a href="#" class="secondary-btn">Men</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="women-cart py-2">
+                <div class="images">
+                  <img
+                    src="./images/women-collection/women1.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#" class="secondary-btn">Women</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-8 col-md-8 header_nav">
-            <nav class="nav__primary">
-              <div class="nav__primary__links">
-                <ul id="menuElem">
-                  <li>
-                    <a href="#">Cashmere</a>
-                  </li>
-                  <li class="has-children">
-                    <a href="#">Women</a>
-                    <div class="pane">
-                      <ul>
-                        <li class="has-children">
-                          <a href="#">Telemarketing</a>
-                          <ul>
-                            <li>
-                              <a href="#">Appointment Setting</a>
-                            </li>
-                            <li>
-                              <a href="#">B2B Telemarketing</a>
-                            </li>
-                            <li>
-                              <a href="#">B2C Telemarketing</a>
-                            </li>
-                            <li>
-                              <a href="#">International Telemarketing</a>
-                            </li>
-                            <li>
-                              <a href="#">Event Marketing</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="has-children">
-                          <a href="#">Telesales</a>
-                          <ul>
-                            <li>
-                              <a href="#">B2B Telesales</a>
-                            </li>
-                            <li>
-                              <a href="#">B2C Telesales</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="has-children">
-                          <a href="#">Lead Generation</a>
-                          <ul>
-                            <li>
-                              <a href="#">B2B Lead Generation</a>
-                            </li>
-                            <li>
-                              <a href="#">B2C Lead Generation</a>
-                            </li>
-                            <li>
-                              <a href="#">Lead Qualification</a>
-                            </li>
-                            <li>
-                              <a href="#">Lead Response Management</a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="has-children">
-                    <a href="#">Men</a>
-                    <div class="pane">
-                      <ul>
-                        <li class="has-children">
-                          <a href="#">Pre Sales Market Research</a>
-                          <ul>
-                            <li>
-                              <a href="#">B2B Market Research</a>
-                            </li>
-                            <li>
-                              <a href="#">B2C Market Research</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="has-children">
-                          <a href="#">Post Sales Market Research</a>
-                          <ul>
-                            <li>
-                              <a href="#">B2B Market Research</a>
-                            </li>
-                            <li>
-                              <a href="#">B2C Market Research</a>
-                            </li>
-                            <li>
-                              <a href="#">Customer Satisfaction</a>
-                            </li>
-                            <li>
-                              <a href="#">CATI Research</a>
-                            </li>
-                            <li>
-                              <a href="#">TCF/Compliance</a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="has-children">
-                    <a href="#">Accessories</a>
-                    <div class="pane">
-                      <ul>
-                        <li>
-                          <a href="#">Data Cleansing</a>
-                        </li>
-                        <li>
-                          <a href="#">Data Enhancement</a>
-                        </li>
-                        <li>
-                          <a href="#">Email Opt-ins: GDPR</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="has-children">
-                    <a href="#">Home</a>
-                  </li>
-                  <li class="has-children">
-                    <a href="#">Our world</a>
-                    <div class="pane">
-                      <ul>
-                        <li>
-                          <a href="#">Articles</a>
-                        </li>
-                        <li>
-                          <a href="#">Downloads</a>
-                        </li>
-                        <li>
-                          <a href="#">Insider Perspective</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
+          <div class="row product__filter my-3">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
+              <div class="product__item">
+                <div class="product__item__pic set-bg">
+                  <span class="label">New</span>
+                  <img
+                    src="./images/product-tab/productimg1.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div class="product__item__text">
+                  <h6>Piqué Biker Jacket</h6>
+                  <a href="#" class="add-cart">+ Add To Cart</a>
+
+                  <h5>$67.24</h5>
+                </div>
               </div>
-            </nav>
-          </div>
-          <div class="col-lg-2 col-md-2 px-4 nav-icons">
-            <a href="" class="search-switch"
-              ><i class="fas fa-search fa-2x"></i
-            ></a>
-            <a href="#"><i class="fas fa-heart fa-2x"></i></a>
-            <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
+              <div class="product__item">
+                <div class="product__item__pic set-bg">
+                  <img
+                    src="./images/product-tab/productimg2.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div class="product__item__text">
+                  <h6>Piqué Biker Jacket</h6>
+                  <a href="#" class="add-cart">+ Add To Cart</a>
+
+                  <h5>$67.24</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
+              <div class="product__item sale">
+                <div class="product__item__pic set-bg">
+                  <span class="label">Sale</span>
+                  <img
+                    src="./images/product-tab/productimg3.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div class="product__item__text">
+                  <h6>Multi-pocket Chest Bag</h6>
+                  <a href="#" class="add-cart">+ Add To Cart</a>
+
+                  <h5>$43.48</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
+              <div class="product__item">
+                <div class="product__item__pic set-bg">
+                  <img
+                    src="./images/product-tab/productimg4.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div class="product__item__text">
+                  <h6>Diagonal Textured Cap</h6>
+                  <a href="#" class="add-cart">+ Add To Cart</a>
+
+                  <h5>$60.9</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
+              <div class="product__item">
+                <div class="product__item__pic set-bg">
+                  <img
+                    src="./images/product-tab/productimg5.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div class="product__item__text">
+                  <h6>Lether Backpack</h6>
+                  <a href="#" class="add-cart">+ Add To Cart</a>
+
+                  <h5>$31.37</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
+              <div class="product__item sale">
+                <div class="product__item__pic set-bg">
+                  <span class="label">Sale</span>
+                  <img
+                    src="./images/product-tab/productimg6.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div class="product__item__text">
+                  <h6>Ankle Boots</h6>
+                  <a href="#" class="add-cart">+ Add To Cart</a>
+
+                  <h5>$98.49</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
+              <div class="product__item">
+                <div class="product__item__pic set-bg">
+                  <img
+                    src="./images/product-tab/productimg7.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div class="product__item__text">
+                  <h6>T-shirt Contrast Pocket</h6>
+                  <a href="#" class="add-cart">+ Add To Cart</a>
+
+                  <h5>$49.66</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
+              <div class="product__item">
+                <div class="product__item__pic set-bg">
+                  <img
+                    src="./images/product-tab/productimg8.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div class="product__item__text">
+                  <h6>Basic Flowing Scarf</h6>
+                  <a href="#" class="add-cart">+ Add To Cart</a>
+
+                  <h5>$26.28</h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="canvas__open"><i class="fa fa-bars"></i></div>
-      </div>
-    </header>
-    <!-- Header section End -->
-    <!-- Hero Section Started -->
-    <section class="hero">
-      <div class="hero-menu set-bg" data-setbg="./images/hero/hero1.png">
-        <div class="content">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-5 col-lg-7 col-md-8 hero-container">
-                <div class="hero__text">
-                  <h6>Summer Collection</h6>
-                  <h2>Fall - Winter Collections 2022</h2>
-                  <p>
-                    A specialist label creating luxury essentials. Ethically
-                    crafted with an unwavering commitment to exceptional
-                    quality.
-                  </p>
+      </section>
+      <!-- Product Section End -->
+      <!-- Catagories Section Start -->
+      <section class="catagories">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="women-catagories catagories-items">
+                <img
+                  src="./images/catagories/catagories1.jpg"
+                  class="w-100 h-100"
+                  alt=""
+
+                />
+                <div class="content text-center">
+                  <h3>Shop Women</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="men-catagories catagories-items py-2">
+                <img
+                  src="./images/catagories/catagories2.jpg"
+                  class="w-100 h-100"
+                  alt=""
+                />
+                <div class="content text-center">
+                  <h3>Shop Men</h3>
+                </div>
+              </div>
+              <div class="accessories-catagories catagories-items  my-2">
+                <img
+                  src="./images/catagories/catagories3.jpg"
+                  class="w-100 h-100"
+                  alt=""
+                />
+                <div class="content text-center">
+                  <h3>Shop Accesories</h3>
+                </div>
+              </div>
+              <div class="home-catagories catagories-items">
+                <img
+                  src="./images/catagories/catagories4.jpg"
+                  class="w-100 h-100"
+                  alt=""
+                />
+                <div class="content text-center">
+                  <h3>Shop Home</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Catagories Section End -->
+      <!-- Signature Collection Section -->
+      <section class="signature-collection my-3">
+        <div
+          class="signature-collection-banner set-bg"
+          data-setbg="./images/men-collection/men-banner.png"
+        >
+          <div class="row">
+            <div class="col-xl-7 col-lg-8 col-md-8 mx-5 my-5 signature-banner-container">
+              <div class="signature-collection-text px-4 py-2">
+                <h6>Signature Collection</h6>
+                <h2>Signature Collections 2022</h2>
+                <p>
+                  A specialist label creating luxury essentials. Ethically
+                  crafted with an unwavering commitment to exceptional quality.
+                </p>
+                <a href="#" class="primary-btn"
+                  >Shop now <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="signature-collection-product py-3">
+          <div class="container-fluid">
+            <div class="row product_filter">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 signature-link-container">
+                <a href="#" class="my-5 signature-link"
+                  >The Signature Collection →</a
+                >
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg">
+                    <span class="label">New</span>
+                    <img
+                      src="./images/signature-collection/signature2.png"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Piqué Biker Jacket</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
+
+                    <h5>$67.24</h5>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women"
+              >
+                <div class="product__item">
+                  <div class="product__item__pic set-bg">
+                    <img
+                      src="./images/signature-collection/signature3.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Piqué Biker Jacket</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
+
+                    <h5>$67.24</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
+                <div class="product__item sale">
+                  <div class="product__item__pic set-bg">
+                    <span class="label">Sale</span>
+                    <img
+                      src="./images/signature-collection/signature4.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Multi-pocket Chest Bag</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
+
+                    <h5>$43.48</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Signature Collection End -->
+      <!--  Classic Collection Section -->
+      <section class="classic-collection my-2">
+        <div
+          class="classic-collection-banner set-bg"
+          data-setbg="./images/classic-collection/classic-banner.png"
+        >
+          <div class="row">
+            <div class="col-xl-7 col-lg-8 col-md-8 classic-banner-container mx-5 my-5">
+              <div class="classic-collection-text px-4 py-2">
+                <h6>Classic Collection</h6>
+                <h2>Classic Collections 2022</h2>
+                <p>
+                  A specialist label creating luxury essentials. Ethically
+                  crafted with an unwavering commitment to exceptional quality.
+                </p>
+                <a href="#" class="primary-btn"
+                  >Shop now <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="classic-collection-product py-4">
+          <div class="container-fluid">
+            <div class="row product_filter">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg">
+                    <span class="label">New</span>
+                    <img
+                      src="./images/classic-collection/classic1.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Piqué Biker Jacket</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
+
+                    <h5>$67.24</h5>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women"
+              >
+                <div class="product__item">
+                  <div class="product__item__pic set-bg">
+                    <img
+                      src="./images/classic-collection/classic2.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Piqué Biker Jacket</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
+
+                    <h5>$67.24</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
+                <div class="product__item sale">
+                  <div class="product__item__pic set-bg">
+                    <span class="label">Sale</span>
+                    <img
+                      src="./images/classic-collection/classic3.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Multi-pocket Chest Bag</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
+
+                    <h5>$43.48</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 classic-link-container">
+                <a href="#" class="my-5 classic-link"
+                  >← The Classic Collection</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Classic Collection End -->
+      <!-- Deal of the week started -->
+      <section class="deal_ofthe_week">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="deal_ofthe_week_img">
+                <img src="./images/deal-of-week/deal_ofthe_week.png" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 text-right deal_ofthe_week_col">
+              <div
+                class="deal_ofthe_week_content d-flex flex-column align-items-center"
+              >
+                <div class="section_title">
+                  <h2>Deal Of The Week</h2>
+                </div>
+                <ul class="timer">
+                  <li
+                    class="d-inline-flex flex-column justify-content-center align-items-center"
+                  >
+                    <div id="day" class="timer_num">03</div>
+                    <div class="timer_unit">Day</div>
+                  </li>
+                  <li
+                    class="d-inline-flex flex-column justify-content-center align-items-center"
+                  >
+                    <div id="hour" class="timer_num">15</div>
+                    <div class="timer_unit">Hours</div>
+                  </li>
+                  <li
+                    class="d-inline-flex flex-column justify-content-center align-items-center"
+                  >
+                    <div id="minute" class="timer_num">45</div>
+                    <div class="timer_unit">Mins</div>
+                  </li>
+                  <li
+                    class="d-inline-flex flex-column justify-content-center align-items-center"
+                  >
+                    <div id="second" class="timer_num">23</div>
+                    <div class="timer_unit">Sec</div>
+                  </li>
+                </ul>
+                <div class="button my-5">
                   <a href="#" class="primary-btn"
                     >Shop now <i class="fas fa-arrow-right"></i
                   ></a>
@@ -278,447 +977,23 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Hero Section End -->
-    <!-- Product Section Started -->
-    <section class="product spad my-2">
-      <div class="container">
-        <h2 class="section-heading text-center py-3">Luxury Cashmere</h2>
-
+      </section>
+      <!-- Deal of week End -->
+      <!-- Accessories Collection Started -->
+      <section class="accessories-collection my-2">
         <div
-          class="row"
-          style="margin-top: 20px; display: flex; justify-content: center"
+          class="accessories-collection-banner set-bg"
+          data-setbg="./images/accessories-collection/accessories-banner.png"
         >
-          <div class="col-lg-6 col-md-6 col-sm-12 px-2">
-            <div class="men-cart">
-              <div class="images">
-                <img src="" class="w-100 h-100" alt="" />
-              </div>
-              <div class="content">
-                <a href="#" class="secondary-btn">Men</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="women-cart">
-              <div class="images">
-                <img
-                  src="./images/women-collection/women1.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="content">
-                <a href="#" class="secondary-btn">Women</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row product__filter my-3">
-          <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
-            <div class="product__item">
-              <div class="product__item__pic set-bg">
-                <span class="label">New</span>
-                <img
-                  src="./images/product-tab/productimg1.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="product__item__text">
-                <h6>Piqué Biker Jacket</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-
-                <h5>$67.24</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
-            <div class="product__item">
-              <div class="product__item__pic set-bg">
-                <img
-                  src="./images/product-tab/productimg2.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="product__item__text">
-                <h6>Piqué Biker Jacket</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-
-                <h5>$67.24</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
-            <div class="product__item sale">
-              <div class="product__item__pic set-bg">
-                <span class="label">Sale</span>
-                <img
-                  src="./images/product-tab/productimg3.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="product__item__text">
-                <h6>Multi-pocket Chest Bag</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-
-                <h5>$43.48</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
-            <div class="product__item">
-              <div class="product__item__pic set-bg">
-                <img
-                  src="./images/product-tab/productimg4.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="product__item__text">
-                <h6>Diagonal Textured Cap</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-
-                <h5>$60.9</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
-            <div class="product__item">
-              <div class="product__item__pic set-bg">
-                <img
-                  src="./images/product-tab/productimg5.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="product__item__text">
-                <h6>Lether Backpack</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-
-                <h5>$31.37</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
-            <div class="product__item sale">
-              <div class="product__item__pic set-bg">
-                <span class="label">Sale</span>
-                <img
-                  src="./images/product-tab/productimg6.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="product__item__text">
-                <h6>Ankle Boots</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-
-                <h5>$98.49</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
-            <div class="product__item">
-              <div class="product__item__pic set-bg">
-                <img
-                  src="./images/product-tab/productimg7.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="product__item__text">
-                <h6>T-shirt Contrast Pocket</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-
-                <h5>$49.66</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
-            <div class="product__item">
-              <div class="product__item__pic set-bg">
-                <img
-                  src="./images/product-tab/productimg8.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="product__item__text">
-                <h6>Basic Flowing Scarf</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-
-                <h5>$26.28</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Product Section End -->
-    <!-- Catagories Section Start -->
-    <section class="catagories">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="women-catagories">
-              <img
-                src="./images/catagories/catagories1.jpg"
-                class="w-100 h-100"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="men-catagories">
-              <img
-                src="./images/catagories/catagories2.jpg"
-                class="w-100 h-100"
-                alt=""
-              />
-            </div>
-            <div class="accessories-catagories py-3">
-              <img
-                src="./images/catagories/catagories3.jpg"
-                class="w-100 h-100"
-                alt=""
-              />
-            </div>
-            <div class="home-catagories">
-              <img
-                src="./images/catagories/catagories4.jpg"
-                class="w-100 h-100"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Catagories Section End -->
-    <!-- Signature Collection Section -->
-    <section class="signature-collection my-3">
-      <div
-        class="signature-collection-banner set-bg"
-        data-setbg="./images/men-collection/men-banner.png"
-      >
-        <div class="row">
-          <div class="col-xl-7 col-lg-8 col-md-8 mx-5 my-5">
-            <div class="signature-collection-text px-4 py-2">
-              <h6>Signature Collection</h6>
-              <h2>Signature Collections 2022</h2>
-              <p>
-                A specialist label creating luxury essentials. Ethically crafted
-                with an unwavering commitment to exceptional quality.
-              </p>
-              <a href="#" class="primary-btn"
-                >Shop now <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="signature-collection-product py-3">
-        <div class="container-fluid">
-          <div class="row product_filter">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
-              <a href="#" class="my-5 signature-link"
-                >The Signature Collection →</a
-              >
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
-              <div class="product__item">
-                <div class="product__item__pic set-bg">
-                  <span class="label">New</span>
-                  <img
-                    src="./images/signature-collection/signature2.png"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Piqué Biker Jacket</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
-
-                  <h5>$67.24</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
-              <div class="product__item">
-                <div class="product__item__pic set-bg">
-                  <img
-                    src="./images/signature-collection/signature3.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Piqué Biker Jacket</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
-
-                  <h5>$67.24</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
-              <div class="product__item sale">
-                <div class="product__item__pic set-bg">
-                  <span class="label">Sale</span>
-                  <img
-                    src="./images/signature-collection/signature4.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Multi-pocket Chest Bag</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
-
-                  <h5>$43.48</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Signature Collection End -->
-    <!--  Classic Collection Section -->
-    <section class="classic-collection my-2">
-      <div
-        class="classic-collection-banner set-bg"
-        data-setbg="./images/classic-collection/classic-banner.png"
-      >
-        <div class="row">
-          <div class="col-xl-7 col-lg-8 col-md-8 mx-5 my-5">
-            <div class="Classic-collection-text px-4 py-2">
-              <h6>Classic Collection</h6>
-              <h2>Classic Collections 2022</h2>
-              <p>
-                A specialist label creating luxury essentials. Ethically crafted
-                with an unwavering commitment to exceptional quality.
-              </p>
-              <a href="#" class="primary-btn"
-                >Shop now <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="classic-collection-product py-4">
-        <div class="container-fluid">
-          <div class="row product_filter">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
-              <div class="product__item">
-                <div class="product__item__pic set-bg">
-                  <span class="label">New</span>
-                  <img
-                    src="./images/signature-collection/signature2.png"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Piqué Biker Jacket</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
-
-                  <h5>$67.24</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
-              <div class="product__item">
-                <div class="product__item__pic set-bg">
-                  <img
-                    src="./images/signature-collection/signature3.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Piqué Biker Jacket</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
-
-                  <h5>$67.24</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
-              <div class="product__item sale">
-                <div class="product__item__pic set-bg">
-                  <span class="label">Sale</span>
-                  <img
-                    src="./images/signature-collection/signature4.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Multi-pocket Chest Bag</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
-
-                  <h5>$43.48</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
-              <a href="#" class="my-5 classic-link">← The Classic Collection</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Classic Collection End -->
-    <!-- Deal of the week started -->
-    <section class="deal_ofthe_week">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="deal_ofthe_week_img">
-              <img src="./images/deal-of-week/deal_ofthe_week.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-6 text-right deal_ofthe_week_col">
-            <div
-              class="deal_ofthe_week_content d-flex flex-column align-items-center float-right"
-            >
-              <div class="section_title">
-                <h2>Deal Of The Week</h2>
-              </div>
-              <ul class="timer">
-                <li
-                  class="d-inline-flex flex-column justify-content-center align-items-center"
-                >
-                  <div id="day" class="timer_num">03</div>
-                  <div class="timer_unit">Day</div>
-                </li>
-                <li
-                  class="d-inline-flex flex-column justify-content-center align-items-center"
-                >
-                  <div id="hour" class="timer_num">15</div>
-                  <div class="timer_unit">Hours</div>
-                </li>
-                <li
-                  class="d-inline-flex flex-column justify-content-center align-items-center"
-                >
-                  <div id="minute" class="timer_num">45</div>
-                  <div class="timer_unit">Mins</div>
-                </li>
-                <li
-                  class="d-inline-flex flex-column justify-content-center align-items-center"
-                >
-                  <div id="second" class="timer_num">23</div>
-                  <div class="timer_unit">Sec</div>
-                </li>
-              </ul>
-              <div class="button my-5">
+          <div class="row">
+            <div class="col-xl-7 col-lg-8 col-md-8 mx-5 my-5 accessories-banner-container">
+              <div class="accessories-collection-text px-4 py-2">
+                <h6>Accessories Collection</h6>
+                <h2>Accessories Collections 2022</h2>
+                <p>
+                  A specialist label creating luxury essentials. Ethically
+                  crafted with an unwavering commitment to exceptional quality.
+                </p>
                 <a href="#" class="primary-btn"
                   >Shop now <i class="fas fa-arrow-right"></i
                 ></a>
@@ -726,679 +1001,668 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Deal of week End -->
-    <!-- Accessories Collection Started -->
-    <section class="accessories-collection my-2">
-      <div
-        class="accessories-collection-banner set-bg"
-        data-setbg="./images/accessories-collection/accessories-banner.png"
-      >
-        <div class="row">
-          <div class="col-xl-7 col-lg-8 col-md-8 mx-5 my-5">
-            <div class="accessories-collection-text px-4 py-2">
-              <h6>Accessories Collection</h6>
-              <h2>Accessories Collections 2022</h2>
-              <p>
-                A specialist label creating luxury essentials. Ethically crafted
-                with an unwavering commitment to exceptional quality.
-              </p>
-              <a href="#" class="primary-btn"
-                >Shop now <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="accessories-collection-product py-4">
-        <div class="container-fluid">
-          <div class="row product_filter">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
-              <a href="#" class="my-5 accessories-link">
-                The Accessories Collection →</a
+        <div class="accessories-collection-product py-4">
+          <div class="container-fluid">
+            <div class="row product_filter">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 accessories-link-container">
+                <a href="#" class="my-5 accessories-link">
+                  The Accessories Collection →</a
+                >
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg">
+                    <span class="label">New</span>
+                    <img
+                      src="./images/accessories-collection/accessories1.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Piqué Biker Jacket</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
+
+                    <h5>$67.24</h5>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women"
               >
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
-              <div class="product__item">
-                <div class="product__item__pic set-bg">
-                  <span class="label">New</span>
-                  <img
-                    src="./images/signature-collection/signature2.png"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Piqué Biker Jacket</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
+                <div class="product__item">
+                  <div class="product__item__pic set-bg">
+                    <img
+                      src="./images/accessories-collection/accessories2.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Piqué Biker Jacket</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
 
-                  <h5>$67.24</h5>
+                    <h5>$67.24</h5>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
-              <div class="product__item">
-                <div class="product__item__pic set-bg">
-                  <img
-                    src="./images/signature-collection/signature3.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Piqué Biker Jacket</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
+              <div
+                class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix accessories"
+              >
+                <div class="product__item sale">
+                  <div class="product__item__pic set-bg">
+                    <span class="label">Sale</span>
+                    <img
+                      src="./images/accessories-collection/accessories3.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Multi-pocket Chest Bag</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
 
-                  <h5>$67.24</h5>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix accessories"
-            >
-              <div class="product__item sale">
-                <div class="product__item__pic set-bg">
-                  <span class="label">Sale</span>
-                  <img
-                    src="./images/signature-collection/signature4.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Multi-pocket Chest Bag</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
-
-                  <h5>$43.48</h5>
+                    <h5>$43.48</h5>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Accessories Collection End -->
-    <!-- Men Collection Started -->
-    <section class="men-collection my-2">
-      <div
-        class="men-collection-banner set-bg"
-        data-setbg="./images/men-collection/men-banner.png"
-      >
-        <div class="row">
-          <div class="col-xl-7 col-lg-8 col-md-8 mx-5 my-5">
-            <div class="men-collection-text px-4 py-2">
-              <h6>Men Collection</h6>
-              <h2>Men Collections 2022</h2>
-              <p>
-                A specialist label creating luxury essentials. Ethically crafted
-                with an unwavering commitment to exceptional quality.
-              </p>
-              <a href="#" class="primary-btn"
-                >Shop now <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="men-collection-product py-4">
-        <div class="container-fluid">
-          <div class="row product_filter">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
-              <div class="product__item">
-                <div class="product__item__pic set-bg">
-                  <span class="label">New</span>
-                  <img
-                    src="./images/signature-collection/signature2.png"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Piqué Biker Jacket</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
-
-                  <h5>$67.24</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
-              <div class="product__item">
-                <div class="product__item__pic set-bg">
-                  <img
-                    src="./images/signature-collection/signature3.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Piqué Biker Jacket</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
-
-                  <h5>$67.24</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
-              <div class="product__item sale">
-                <div class="product__item__pic set-bg">
-                  <span class="label">Sale</span>
-                  <img
-                    src="./images/signature-collection/signature4.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Multi-pocket Chest Bag</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
-
-                  <h5>$43.48</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
-              <a href="#" class="my-5 men-link">← The Men Collection</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Men Collection End -->
-    <!-- Women Collection Started -->
-    <section class="women-collection my-2">
-      <div
-        class="women-collection-banner set-bg"
-        data-setbg="./images/women-collection/women-banner.png"
-      >
-        <div class="row">
-          <div class="col-xl-7 col-lg-8 col-md-8 mx-5 my-5">
-            <div class="women-collection-text px-4 py-2">
-              <h6>Women Collection</h6>
-              <h2>Women Collections 2022</h2>
-              <p>
-                A specialist label creating luxury essentials. Ethically crafted
-                with an unwavering commitment to exceptional quality.
-              </p>
-              <a href="#" class="primary-btn"
-                >Shop now <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="women-collection-product py-4">
-        <div class="container-fluid">
-          <div class="row product_filter">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
-              <a href="#" class="my-5 women-link"> The Women Collection → </a>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
-              <div class="product__item">
-                <div class="product__item__pic set-bg">
-                  <span class="label">New</span>
-                  <img
-                    src="./images/signature-collection/signature2.png"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Piqué Biker Jacket</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
-
-                  <h5>$67.24</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
-              <div class="product__item">
-                <div class="product__item__pic set-bg">
-                  <img
-                    src="./images/signature-collection/signature3.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Piqué Biker Jacket</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
-
-                  <h5>$67.24</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
-              <div class="product__item sale">
-                <div class="product__item__pic set-bg">
-                  <span class="label">Sale</span>
-                  <img
-                    src="./images/signature-collection/signature4.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Multi-pocket Chest Bag</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
-
-                  <h5>$43.48</h5>
-                </div>
+      </section>
+      <!-- Accessories Collection End -->
+      <!-- Men Collection Started -->
+      <section class="men-collection my-2">
+        <div
+          class="men-collection-banner set-bg"
+          data-setbg="./images/men-collection/men-banner.png"
+        >
+          <div class="row">
+            <div class="col-xl-7 col-lg-8 col-md-8 mx-5 my-5 men-banner-container">
+              <div class="men-collection-text px-4 py-2">
+                <h6>Men Collection</h6>
+                <h2>Men Collections 2022</h2>
+                <p>
+                  A specialist label creating luxury essentials. Ethically
+                  crafted with an unwavering commitment to exceptional quality.
+                </p>
+                <a href="#" class="primary-btn"
+                  >Shop now <i class="fas fa-arrow-right"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Women Collection End -->
-    <!-- Superfine Collection Started -->
-    <section class="superfine-collection my-2">
-      <h2 class="section-heading text-center">Superfine Collection</h2>
+        <div class="men-collection-product py-4">
+          <div class="container-fluid">
+            <div class="row product_filter">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg">
+                    <span class="label">New</span>
+                    <img
+                      src="./images/men-collection/men1.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Piqué Biker Jacket</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
 
-      <div class="superfine-collection-product py-4">
-        <div class="container-fluid">
-          <div class="row product_filter">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
-              <div class="product__item">
-                <div class="product__item__pic set-bg">
-                  <span class="label">New</span>
-                  <img
-                    src="./images/signature-collection/signature2.png"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Piqué Biker Jacket</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
-
-                  <h5>$67.24</h5>
+                    <h5>$67.24</h5>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
-              <div class="product__item">
-                <div class="product__item__pic set-bg">
-                  <img
-                    src="./images/signature-collection/signature3.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Piqué Biker Jacket</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
+              <div
+                class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women"
+              >
+                <div class="product__item">
+                  <div class="product__item__pic set-bg">
+                    <img
+                      src="./images/men-collection/men2.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Piqué Biker Jacket</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
 
-                  <h5>$67.24</h5>
+                    <h5>$67.24</h5>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
-              <div class="product__item sale">
-                <div class="product__item__pic set-bg">
-                  <span class="label">Sale</span>
-                  <img
-                    src="./images/signature-collection/signature4.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div class="product__item__text">
-                  <h6>Multi-pocket Chest Bag</h6>
-                  <a href="#" class="add-cart">+ Add To Cart</a>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
+                <div class="product__item sale">
+                  <div class="product__item__pic set-bg">
+                    <span class="label">Sale</span>
+                    <img
+                      src="./images/men-collection/men3.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Multi-pocket Chest Bag</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
 
-                  <h5>$43.48</h5>
+                    <h5>$43.48</h5>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
-              <a href="#" class="my-5 superfine-link"
-                >← The Superfine Collection
-              </a>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 men-link-container">
+                <a href="#" class="my-5 men-link">← The Men Collection</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="superfine-collection-banner set-bg"
-        data-setbg="./images/classic-collection/classic-banner.png"
-      >
-        <div class="row">
-          <div class="col-xl-7 col-lg-8 col-md-8 mx-5 my-5">
-            <div class="superfine-collection-text px-4 py-2">
-              <h6>Superfine Collection</h6>
-              <h2>Superfine Collections 2022</h2>
-              <p>
-                A specialist label creating luxury essentials. Ethically crafted
-                with an unwavering commitment to exceptional quality.
-              </p>
-              <a href="#" class="primary-btn"
-                >Shop now <i class="fas fa-arrow-right"></i
-              ></a>
+      </section>
+      <!-- Men Collection End -->
+      <!-- Women Collection Started -->
+      <section class="women-collection my-2">
+        <div
+          class="women-collection-banner set-bg"
+          data-setbg="./images/women-collection/women-banner.png"
+        >
+          <div class="row">
+            <div class="col-xl-7 col-lg-8 col-md-8 mx-5 my-5 women-banner-container">
+              <div class="women-collection-text px-4 py-2">
+                <h6>Women Collection</h6>
+                <h2>Women Collections 2022</h2>
+                <p>
+                  A specialist label creating luxury essentials. Ethically
+                  crafted with an unwavering commitment to exceptional quality.
+                </p>
+                <a href="#" class="primary-btn"
+                  >Shop now <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Women Collection End -->
-    <!-- Feature Section Start -->
+        <div class="women-collection-product py-4">
+          <div class="container-fluid">
+            <div class="row product_filter">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 women-link-containers">
+                <a href="#" class="my-5 women-link"> The Women Collection → </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg">
+                    <span class="label">New</span>
+                    <img
+                      src="./images/women-collection/women1.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Piqué Biker Jacket</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
 
-    <section class="feature-area py-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="single-feature title">
-              <i class="fas fa-money-bill-wave fa-3x"></i>
-              <h3>Money back gurantee</h3>
-              <p>Shall open divide a one</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="single-feature title">
-              <i class="fas fa-truck fa-3x"></i>
-
-              <h3>Free Delivery</h3>
-
-              <p>Shall open divide a one</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="single-feature title">
-              <i class="fas fa-headphones fa-3x"></i>
-
-              <h3>Alway support</h3>
-
-              <p>Shall open divide a one</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="single-feature title">
-              <i class="fas fa-lock fa-3x"></i>
-              <h3>Secure payment</h3>
-
-              <p>Shall open divide a one</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--feature section End -->
-    <!-- Detail Section Start -->
-    <section class="detail">
-      <div class="container">
-        <div class="detail-content">
-          <h2 class="section-heading text-center my-3">
-            The World Of Luxury Cashmere & Fashion
-          </h2>
-          <p class="text-justify my-4">
-            Kanchan Cashmere is the leading Cashmere manufacturer in Nepal which
-            supplies highest quality Cashmere products throughout the world. As
-            a luxury Cashmere manufacturer and supplier, we deal in exclusive
-            clothing and accessories including handmade and knitted sweaters,
-            scarves, mitten, ponchos, gloves, socks and other items that cope up
-            with the latest fashion trends. The unique properties of exceptional
-            softness and warmth make this luxury fabric a preferred choice among
-            people. Cashmere items are 40% warmer than normal wool and these
-            items are the best to keep your body warm during cold winter.
-          </p>
-          <p class="text-justify">
-            Being the manufacturer of fine Cashmere products, we provide wide
-            range of 100% Cashmere clothes for men and women in different
-            colours and designs to provide our clients with more choice. We
-            never compromise with quality which is why our technicians make
-            quality checks on all our production cycles to ensure that our
-            clients get the best finished product. All of our Cashmere products
-            are customizable and the size, colour and grading of these items can
-            be tailored to your requirement.
-          </p>
-        </div>
-        <div class="detail-images">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-12 px-2">
-                <div class="image">
-                  <img
-                    src="./images/details/detail1.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
+                    <h5>$67.24</h5>
+                  </div>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 px-2">
-                <div class="image">
-                  <img
-                    src="./images/details/detail2.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
+              <div
+                class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women"
+              >
+                <div class="product__item">
+                  <div class="product__item__pic set-bg">
+                    <img
+                      src="./images/women-collection/women2.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Piqué Biker Jacket</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
+
+                    <h5>$67.24</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
+                <div class="product__item sale">
+                  <div class="product__item__pic set-bg">
+                    <span class="label">Sale</span>
+                    <img
+                      src="./images/women-collection/women3.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Multi-pocket Chest Bag</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
+
+                    <h5>$43.48</h5>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Detail Section End -->
-    <!-- Instagram Section Start-->
+      </section>
+      <!-- Women Collection End -->
+      <!-- Superfine Collection Started -->
+      <section class="superfine-collection my-2">
+        <h2 class="section-heading text-center">Superfine Collection</h2>
 
-    <section class="instagram my-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="instagram__pic">
-              <div class="instagram__pic__item set-bg">
-                <img
-                  src="./images/instagram/instagram-1.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="instagram__pic__item set-bg">
-                <img
-                  src="./images/instagram/instagram-2.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="instagram__pic__item set-bg">
-                <img
-                  src="./images/instagram/instagram-3.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="instagram__pic__item set-bg">
-                <img
-                  src="./images/instagram/instagram-4.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="instagram__pic__item set-bg">
-                <img
-                  src="./images/instagram/instagram-5.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="instagram__pic__item set-bg">
-                <img
-                  src="./images/instagram/instagram-6.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="instagram__text">
-              <h2>Instagram</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <h3 data-aos="flip-left">#KanchanCashmere</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Instagram Section End -->
+        <div class="superfine-collection-product py-4">
+          <div class="container-fluid">
+            <div class="row product_filter">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg">
+                    <span class="label">New</span>
+                    <img
+                      src="./images/signature-collection/signature2.png"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Piqué Biker Jacket</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
 
-    <!-- Contact Section Start -->
-    <section class="contact">
-      <div class="container">
-        <h2 class="text-center">Keep In Touch</h2>
-        <div class="form text-center my-3">
-          <form class="form">
-            <input
-              class="form_input"
-              type="text"
-              placeholder="example@gmail.com"
-            />
-            <button class="submit-btn" type="button">Submit</button>
-          </form>
-        </div>
-      </div>
-    </section>
-    <!-- contact section End -->
+                    <h5>$67.24</h5>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women"
+              >
+                <div class="product__item">
+                  <div class="product__item__pic set-bg">
+                    <img
+                      src="./images/signature-collection/signature3.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Piqué Biker Jacket</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
 
-    <!-- Footer Section Start -->
-    <section class="footer" id="footer">
-      <div class="container">
-        <div class="row py-5">
-          <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
-            <h4>Help</h4>
-            <div class="footer-list my-2">
-              <ul class="navbar-nav">
-                <li class="mx-2">
-                  <a href="#">Cashmere Care</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">Pilling Remover</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">Product & Services</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">Terms & Conditions</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">Size Guide</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 px-4 py-3">
-            <h4>Kanchan Cashmere</h4>
-            <div class="footer-list my-2">
-              <ul class="navbar-nav">
-                <li class="mx-2">
-                  <a href="#">About us</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">Our Natural Yarns</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">Quality Knitwear</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">Production of Cashmere</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">Future</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
-            <h4>Business</h4>
-            <div class="footer-list my-2">
-              <ul class="navbar-nav">
-                <li class="mx-2">
-                  <a href="#">Color Card Request</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">Catologue Request</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">Custom Made</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">Made To Order</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">Private Label</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">B2B</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
-            <h4>Track</h4>
-            <div class="footer-list my-2">
-              <ul class="navbar-nav">
-                <li class="mx-2">
-                  <a href="#">Track My Order</a>
-                </li>
-                <li class="mx-2">
-                  <a href="#">Order History</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 px-3">
-            <h4>Help Center</h4>
-            <p class="footer-p">
-              Want to know more about our Yarn Quality,size and color?Take a
-              look at help center,where you can find all the info you need
-              quickly
-            </p>
-            <div class="help-center text-center my-4">
-              <a href="">Visit our Help Center</a>
-            </div>
-            <div class="shipping-partner my-4">
-              <h4>Shipping Partner</h4>
-              <div class="images">
-                <img src="./images/partner/partner1.png" class="w-100" alt="" />
+                    <h5>$67.24</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
+                <div class="product__item sale">
+                  <div class="product__item__pic set-bg">
+                    <span class="label">Sale</span>
+                    <img
+                      src="./images/signature-collection/signature4.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="product__item__text">
+                    <h6>Multi-pocket Chest Bag</h6>
+                    <a href="#" class="add-cart">+ Add To Cart</a>
+
+                    <h5>$43.48</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 superfine-link-container">
+                <a href="#" class="my-5 superfine-link"
+                  >← The Superfine Collection
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="last-footer py-2 d-flex"
-          style="
-            justify-content: space-between;
-            border-top: 1px solid rgb(131, 131, 131);
-          "
+          class="superfine-collection-banner set-bg"
+          data-setbg="./images/classic-collection/classic-banner.png"
         >
           <div class="row">
-            <div class="col-lg-9 col-md-6">
-              <h6 class="my-2">
-                Copyrights © 2012-2022, Kanchan Cashmere Industries Pvt. Ltd.
-                All rights reserved.
-              </h6>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <img
-                src="./images/partner/payment.png"
-                class="w-100 h-100"
-                alt=""
-              />
+            <div class="col-xl-7 col-lg-8 col-md-8 mx-5 my-5 superfine-banner-container">
+              <div class="superfine-collection-text px-4 py-2">
+                <h6>Superfine Collection</h6>
+                <h2>Superfine Collections 2022</h2>
+                <p>
+                  A specialist label creating luxury essentials. Ethically
+                  crafted with an unwavering commitment to exceptional quality.
+                </p>
+                <a href="#" class="primary-btn"
+                  >Shop now <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Footer Section End -->
+      </section>
+      <!-- Women Collection End -->
+      <!-- Feature Section Start -->
+
+      <section class="feature-area py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="single-feature title">
+                <i class="fas fa-money-bill-wave fa-3x"></i>
+                <h3>Money back gurantee</h3>
+                <p>Shall open divide a one</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="single-feature title">
+                <i class="fas fa-truck fa-3x"></i>
+
+                <h3>Free Delivery</h3>
+
+                <p>Shall open divide a one</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="single-feature title">
+                <i class="fas fa-headphones fa-3x"></i>
+
+                <h3>Alway support</h3>
+
+                <p>Shall open divide a one</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="single-feature title">
+                <i class="fas fa-lock fa-3x"></i>
+                <h3>Secure payment</h3>
+
+                <p>Shall open divide a one</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--feature section End -->
+      <!-- Detail Section Start -->
+      <section class="detail">
+        <div class="container">
+          <div class="detail-content">
+            <h2 class="section-heading text-center my-3">
+              The World Of Luxury Cashmere & Fashion
+            </h2>
+            <p class="text-justify my-4">
+              Kanchan Cashmere is the leading Cashmere manufacturer in Nepal
+              which supplies highest quality Cashmere products throughout the
+              world. As a luxury Cashmere manufacturer and supplier, we deal in
+              exclusive clothing and accessories including handmade and knitted
+              sweaters, scarves, mitten, ponchos, gloves, socks and other items
+              that cope up with the latest fashion trends. The unique properties
+              of exceptional softness and warmth make this luxury fabric a
+              preferred choice among people. Cashmere items are 40% warmer than
+              normal wool and these items are the best to keep your body warm
+              during cold winter.
+            </p>
+            <p class="text-justify">
+              Being the manufacturer of fine Cashmere products, we provide wide
+              range of 100% Cashmere clothes for men and women in different
+              colours and designs to provide our clients with more choice. We
+              never compromise with quality which is why our technicians make
+              quality checks on all our production cycles to ensure that our
+              clients get the best finished product. All of our Cashmere
+              products are customizable and the size, colour and grading of
+              these items can be tailored to your requirement.
+            </p>
+          </div>
+          <div class="detail-images">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 px-2">
+                  <div class="image">
+                    <img
+                      src="./images/details/detail1.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 px-2">
+                  <div class="image">
+                    <img
+                      src="./images/details/detail2.jpg"
+                      class="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Detail Section End -->
+      <!-- Instagram Section Start-->
+
+      <section class="instagram my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="instagram__pic">
+                <div class="instagram__pic__item set-bg">
+                  <img
+                    src="./images/instagram/instagram-1.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div class="instagram__pic__item set-bg">
+                  <img
+                    src="./images/instagram/instagram-2.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div class="instagram__pic__item set-bg">
+                  <img
+                    src="./images/instagram/instagram-3.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div class="instagram__pic__item set-bg">
+                  <img
+                    src="./images/instagram/instagram-4.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div class="instagram__pic__item set-bg">
+                  <img
+                    src="./images/instagram/instagram-5.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div class="instagram__pic__item set-bg">
+                  <img
+                    src="./images/instagram/instagram-6.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="instagram__text">
+                <h2>Instagram</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h3 data-aos="flip-left">#KanchanCashmere</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Instagram Section End -->
+
+      <!-- Contact Section Start -->
+      <section class="contact">
+        <div class="container">
+          <h2 class="text-center">Keep In Touch</h2>
+          <div class="form text-center my-3">
+            <form class="form">
+              <input
+                class="form_input"
+                type="text"
+                placeholder="example@gmail.com"
+              />
+              <button class="submit-btn" type="button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- contact section End -->
+
+      <!-- Footer Section Start -->
+      <section class="footer" id="footer">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
+              <h4>Help</h4>
+              <div class="footer-list my-2">
+                <ul class="navbar-nav">
+                  <li class="mx-2">
+                    <a href="#">Cashmere Care</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">Pilling Remover</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">Product & Services</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">Terms & Conditions</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">Size Guide</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 px-4 py-3">
+              <h4>Kanchan Cashmere</h4>
+              <div class="footer-list my-2">
+                <ul class="navbar-nav">
+                  <li class="mx-2">
+                    <a href="#">About us</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">Our Natural Yarns</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">Quality Knitwear</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">Production of Cashmere</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">Future</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
+              <h4>Business</h4>
+              <div class="footer-list my-2">
+                <ul class="navbar-nav">
+                  <li class="mx-2">
+                    <a href="#">Color Card Request</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">Catologue Request</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">Custom Made</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">Made To Order</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">Private Label</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">B2B</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
+              <h4>Track</h4>
+              <div class="footer-list my-2">
+                <ul class="navbar-nav">
+                  <li class="mx-2">
+                    <a href="#">Track My Order</a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#">Order History</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 px-3">
+              <h4>Help Center</h4>
+              <p class="footer-p">
+                Want to know more about our Yarn Quality,size and color?Take a
+                look at help center,where you can find all the info you need
+                quickly
+              </p>
+              <div class="help-center text-center my-4">
+                <a href="">Visit our Help Center</a>
+              </div>
+              <div class="shipping-partner my-4">
+                <h4>Shipping Partner</h4>
+                <div class="images">
+                  <img
+                    src="./images/partner/partner1.png"
+                    class="w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="last-footer py-2 d-flex"
+            style="
+              justify-content: space-between;
+              border-top: 1px solid rgb(131, 131, 131);
+            "
+          >
+            <div class="row">
+              <div class="col-lg-9 col-md-6">
+                <h6 class="my-2">
+                  Copyrights © 2012-2022, Kanchan Cashmere Industries Pvt. Ltd.
+                  All rights reserved.
+                </h6>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <img
+                  src="./images/partner/payment.png"
+                  class="w-100 h-100"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer Section End -->
+    </div>
 
     <!-- Linking JQuery -->
     <script
