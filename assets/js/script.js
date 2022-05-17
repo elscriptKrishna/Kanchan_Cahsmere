@@ -77,7 +77,22 @@
   function(){
     $(this).css("display","none");
   });
-  // 
+  // Our World Sub menu
+   // Accesssories Sub-menu
+   $("#sub-menu-world").hover(function(){
+    $("#world-pane").css("display","block");
+    
+    $("#men-pane").css("display","none");
+    $("#women-pane").css("display","none");
+   
+    $("#accessories-pane").css("display","none");
+  }
+  
+  );
+  $("#world-pane").hover(function(){},
+  function(){
+    $(this).css("display","none");
+  });
 
 
   
