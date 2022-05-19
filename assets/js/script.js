@@ -169,11 +169,50 @@
     $("#rotate-icon6").toggleClass("arrow-rotate");
   });
    // Accessories submenu  Section
-   $("#submenu-menu8").on("click", function () {
-    $("#men-shoes").toggleClass("active");
-    $("#men-submenu").toggleClass("active");
-    $("#rotate-icon9").toggleClass("arrow-rotate");
-    $("#rotate-icon6").toggleClass("arrow-rotate");
+   $("#accessories-submenu-li").on("click", function () {
+    $("#accessories-submenu").toggleClass("active");
+    
+    $("#rotate-icon10").toggleClass("arrow-rotate");
+    
+  });
+  // Accesories Earring Section
+  $("#submenu-menu8").on("click", function () {
+    $("#accessories-submenu").toggleClass("active");
+    $("#accessories-earring").toggleClass("active");
+    $("#rotate-icon11").toggleClass("arrow-rotate");
+    
+    $("#rotate-icon10").toggleClass("arrow-rotate");
+    
+  });
+  // Accessories Belt Section
+  $("#submenu-menu9").on("click", function () {
+    $("#accessories-submenu").toggleClass("active");
+    $("#accessories-belt").toggleClass("active");
+    $("#rotate-icon12").toggleClass("arrow-rotate");
+
+    
+    $("#rotate-icon10").toggleClass("arrow-rotate");
+    
+  });
+  // Accessories Hats Section
+  $("#submenu-menu10").on("click", function () {
+    $("#accessories-submenu").toggleClass("active");
+    $("#accessories-hat").toggleClass("active");
+    $("#rotate-icon13").toggleClass("arrow-rotate");
+  
+    
+    $("#rotate-icon10").toggleClass("arrow-rotate");
+    
+  });
+  // Accessories Sunglasses Section
+  $("#submenu-menu11").on("click", function () {
+    $("#accessories-submenu").toggleClass("active");
+    $("#accessories-sunglasses").toggleClass("active");
+    $("#rotate-icon14").toggleClass("arrow-rotate");
+   
+    
+    $("#rotate-icon10").toggleClass("arrow-rotate");
+    
   });
 
   /*------------------
