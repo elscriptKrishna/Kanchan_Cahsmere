@@ -1708,7 +1708,7 @@ a:link {
   .hero__text{
     position: absolute;
     top: 0;
-    left: -49px;
+    left: -27px;
   }
  .classic-banner-container{
    position: absolute;
@@ -1846,6 +1846,9 @@ a:link {
 @media only screen and (max-width: 313px) {
   .contact {
     display: none;
+  }
+  .hero__text{
+    left: -47px;
   }
   .classic-banner-container{
     position: absolute;
