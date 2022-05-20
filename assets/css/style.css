@@ -1705,6 +1705,48 @@ a:link {
 }
 
 @media only screen and (max-width: 730px) {
+  .hero__text{
+    position: absolute;
+    top: 0;
+    left: -49px;
+  }
+ .classic-banner-container{
+   position: absolute;
+   top: 0;
+   left: -16px;
+
+ }
+ .signature-banner-container{
+  position: absolute;
+  top: 0;
+  left: -16px;
+
+}
+.men-banner-container{
+  position: absolute;
+  top: 0;
+  left: -16px;
+
+}
+.women-banner-container{
+  position: absolute;
+  top: 0;
+  left: -16px;
+
+}
+.accessories-banner-container{
+  position: absolute;
+  top: 0;
+  left: -16px;
+
+}
+.superfine-banner-container{
+  position: absolute;
+  top: 0;
+  left: -16px;
+
+}
+ 
   .classic-collection-text {
     padding-left: 5px !important;
     margin: 0;
@@ -1763,7 +1805,7 @@ a:link {
     font-size: 28px;
     line-height: 28px;
     top: 140px;
-    left: 126px;
+    left: 118px;
     cursor: pointer;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -1805,6 +1847,42 @@ a:link {
   .contact {
     display: none;
   }
+  .classic-banner-container{
+    position: absolute;
+    top: 0;
+    left: -65px;
+ 
+  }
+  .signature-banner-container{
+   position: absolute;
+   top: 0;
+   left: -65px;
+ 
+ }
+ .men-banner-container{
+   position: absolute;
+   top: 0;
+   left: -65px;
+ 
+ }
+ .women-banner-container{
+   position: absolute;
+   top: 0;
+   left: -65px;
+ 
+ }
+ .accessories-banner-container{
+   position: absolute;
+   top: 0;
+   left: -65px;
+ 
+ }
+ .superfine-banner-container{
+   position: absolute;
+   top: 0;
+   left: -65px;
+ 
+ }
   .classic-banner-container {
     margin-left: 10px !important;
     margin-right: 10px !important;
