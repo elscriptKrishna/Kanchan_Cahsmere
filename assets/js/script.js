@@ -27,6 +27,7 @@
     $("#accessories-pane").css("display", "none");
     $("#world-pane").css("display", "none");
     $("#cashmere-pane").css("display", "none");
+    $("#home-pane").css("display", "none");
   });
 
   // Cashmere sub-menu
@@ -36,6 +37,7 @@
     $("#cashmere-pane").css("display", "block");
     $("#world-pane").css("display", "none");
     $("#accessories-pane").css("display","none")
+    $("#home-pane").css("display", "none");
   });
   $("#cashmere-pane").hover(
     function () {},
@@ -50,6 +52,7 @@
     $("#accessories-pane").css("display", "none");
     $("#world-pane").css("display", "none");
     $("#cashmere-pane").css("display", "none");
+    $("#home-pane").css("display", "none");
   });
   $("#women-pane").hover(
     function () {},
@@ -65,6 +68,7 @@
     $("#accessories-pane").css("display", "none");
     $("#world-pane").css("display", "none");
     $("#cashmere-pane").css("display", "none");
+    $("#home-pane").css("display", "none");
   });
   $("#men-pane").hover(
     function () {},
@@ -80,10 +84,24 @@
 
     $("#men-pane").css("display", "none");
     $("#women-pane").css("display", "none");
-
+    $("#home-pane").css("display", "none");
     $("#world-pane").css("display", "none");
   });
   $("#accessories-pane").hover(
+    function () {},
+    function () {
+      $(this).css("display", "none");
+    }
+  );
+   // Home sub-menu
+   $("#sub-menu-home").hover(function () {
+    $("#women-pane").css("display", "none");
+    $("#men-pane").css("display", "none");
+    $("#home-pane").css("display", "block");
+    $("#world-pane").css("display", "none");
+    $("#accessories-pane").css("display","none")
+  });
+  $("#home-pane").hover(
     function () {},
     function () {
       $(this).css("display", "none");
@@ -97,6 +115,7 @@
 
     $("#men-pane").css("display", "none");
     $("#women-pane").css("display", "none");
+    $("#home-pane").css("display", "none");
 
     $("#accessories-pane").css("display", "none");
   });
