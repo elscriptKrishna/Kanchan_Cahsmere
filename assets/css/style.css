@@ -369,11 +369,19 @@ a:link {
 /* Navigation End */
 /* Hero Section Start */
 .hero-menu {
-  background-image: url("../../images/Hero/hero2.png");
-  background-position: center;
-  background-size: cover;
+  position: relative;
+  
   height: 800px;
   width: 100%;
+}
+.hero-menu img{
+  width: 100%;
+  height: 100%;
+}
+.hero-menu .content{
+  position: absolute;
+  top: 32px;
+  left: 68px;
 }
 .hero-container {
   padding-top: 100px;
@@ -684,9 +692,19 @@ a:link {
   width: 100%;
   height: 600px;
   overflow: hidden;
+  position: relative;
+}
+.signature-collection-banner img{
+  width: 100%;
+  height: 100%;
 }
 .signature-collection-text {
   margin-top: 85px;
+}
+.signature-banner-container{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .signature-collection-banner h6 {
   color: #e53637;
@@ -747,6 +765,17 @@ a:link {
   width: 100%;
   height: 600px;
   overflow: hidden;
+  position: relative;
+}
+.classic-collection-banner img{
+  width: 100%;
+  height: 100%;
+}
+.classic-banner-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+
 }
 .classic-collection-text {
   margin-top: 85px;
@@ -859,12 +888,22 @@ a:link {
 /* Deal of week End */
 /* Accessories Collection Started */
 .accessories-collection-banner {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+ 
   width: 100%;
   height: 600px;
   overflow: hidden;
+  position: relative;
+ 
+}
+.accessories-collection-banner img{
+  width: 100%;
+  height: 100%;
+}
+.accessories-banner-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+
 }
 .accessories-collection-text {
   margin-top: 85px;
@@ -929,6 +968,16 @@ a:link {
   width: 100%;
   height: 600px;
   overflow: hidden;
+  position: relative;
+}
+.men-collection-banner img{
+  width: 100%;
+  height: 100%;
+}
+.men-banner-container {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .men-collection-text {
   margin-top: 85px;
@@ -992,6 +1041,16 @@ a:link {
   width: 100%;
   height: 600px;
   overflow: hidden;
+  position: relative;
+}
+.women-collection-banner img{
+  width: 100%;
+  height: 100%;
+}
+.women-banner-container{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .women-collection-text {
   margin-top: 85px;
@@ -1055,6 +1114,16 @@ a:link {
   width: 100%;
   height: 600px;
   overflow: hidden;
+  position: relative;
+}
+.superfine-collection-banner img{
+  width: 100%;
+  height: 100%;
+}
+.superfine-banner-container{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .superfine-collection-text {
   margin-top: 85px;
