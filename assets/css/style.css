@@ -1164,10 +1164,10 @@ a:link {
   
 }
 .detail-content{
-  
+  width: 100%;
   position: absolute;
-  top: 35px;
-  left: 10px;
+  top: 177px;
+  
 }
 .detail-content h3{
   color: #ffffff !important;
@@ -1841,7 +1841,7 @@ a:link {
     display: none;
   }
   .product__item__pic{
-    height: 66vh !important;
+    height: 120vh !important;
   }
 }
 @media only screen and (max-width: 461px) {
