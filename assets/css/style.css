@@ -1841,7 +1841,7 @@ a:link {
     display: none;
   }
   .product__item__pic{
-    height: 120vh !important;
+    height: 66vh !important;
   }
 }
 @media only screen and (max-width: 461px) {
