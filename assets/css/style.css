@@ -81,6 +81,9 @@ p a {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
+img{
+  object-fit: cover;
+}
 
 a,
 a:hover,
@@ -1336,6 +1339,9 @@ a:link {
   box-shadow: 0 3px 3px rgba(0,0,0,0.22);
   z-index: 9999;
 }
+.banner img{
+  object-fit: fill;
+}
 
 /* **************************************************Responsive Media Query***************************************************************** */
 @media only screen and (max-width: 1183px) {
@@ -1719,6 +1725,9 @@ a:link {
     top: 11px;
     right: 32px;
   }
+  .women-cart{
+    height:749px ;
+  }
 }
 
 @media only screen and (max-width: 730px) {
@@ -1735,7 +1744,7 @@ a:link {
  }
  .catagories .women-catagories {
   width: 100%;
-  height: 400px;
+  height: 593px;
 }
  .signature-banner-container{
   position: absolute;
@@ -1811,6 +1820,9 @@ a:link {
   }
   .signature-link-container {
     display: none;
+  }
+  .product__item__pic{
+    height: 120vh !important;
   }
 }
 @media only screen and (max-width: 461px) {
